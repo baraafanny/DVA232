@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Savoye.ttc">
+            <string>SavoyeLetPlain</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InloggPic" translatesAutoresizingMaskIntoConstraints="NO" id="XuW-sF-foW">
+                                <rect key="frame" x="70" y="90" width="628" height="201"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEVJ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmT-QA-1I5">
+                                <rect key="frame" x="310" y="312" width="148" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="Cb6-2g-jZh"/>
+                                    <constraint firstAttribute="height" constant="62" id="t9D-ae-zi4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Production" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ai-j6-kBN">
+                                <rect key="frame" x="276.5" y="382" width="215" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="aYY-Nl-V22"/>
+                                    <constraint firstAttribute="width" constant="215" id="rjj-53-m2e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="53"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XuW-sF-foW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0oL-nQ-Ed3"/>
+                            <constraint firstItem="3Ai-j6-kBN" firstAttribute="top" secondItem="qmT-QA-1I5" secondAttribute="bottom" constant="8" id="3hK-24-SAA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XuW-sF-foW" secondAttribute="trailing" constant="70" id="6of-1s-ohn"/>
+                            <constraint firstItem="qmT-QA-1I5" firstAttribute="top" secondItem="XuW-sF-foW" secondAttribute="bottom" constant="21" id="IiF-Nd-zhc"/>
+                            <constraint firstItem="3Ai-j6-kBN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VCV-RG-kz1"/>
+                            <constraint firstItem="XuW-sF-foW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="X43-yD-Wd2"/>
+                            <constraint firstItem="XuW-sF-foW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="ZsM-4k-G3Y"/>
+                            <constraint firstItem="qmT-QA-1I5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cwd-TS-dzz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="373.94366197183098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="InloggPic" width="200" height="201"/>
+    </resources>
+</document>

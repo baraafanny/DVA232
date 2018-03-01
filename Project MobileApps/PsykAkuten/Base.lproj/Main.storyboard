@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T6o-vP-mjR">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+        <array key="Farah.ttc">
+            <string>Farah</string>
+        </array>
+        <array key="Savoye.ttc">
+            <string>SavoyeLetPlain</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register Popup View Controller-->
+        <scene sceneID="pJ4-Sn-dOP">
+            <objects>
+                <viewController storyboardIdentifier="RegisterPopup" id="DLz-zP-wNi" customClass="RegisterPopupViewController" customModule="PsykAkuten" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GSE-Qf-QCt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRU-0H-ed1">
+                                <rect key="frame" x="67.666666666666686" y="296.66666666666669" width="240" height="173"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popuppbubbla" translatesAutoresizingMaskIntoConstraints="NO" id="YKn-BE-SCe">
+                                        <rect key="frame" x="-22" y="-6" width="284" height="219"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="284" id="FzK-ZA-h2j"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="284" id="flU-hu-WEj"/>
+                                            <constraint firstAttribute="height" constant="219" id="qKZ-I9-1Ro"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="219" id="wcA-3i-UfK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwX-Zm-o1g" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                        <rect key="frame" x="151" y="136" width="81" height="29"/>
+                                        <color key="backgroundColor" red="0.86722064018249512" green="0.99861782789230347" blue="0.87463974952697754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                        <state key="normal" title="Registrera">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="RegisterButton:" destination="DLz-zP-wNi" eventType="touchUpInside" id="TfQ-Ns-3Ss"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status visas här" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbL-sG-tKU">
+                                        <rect key="frame" x="8" y="133" width="122" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="5pG-Fa-rQK"/>
+                                            <constraint firstAttribute="width" constant="122" id="OEY-Ds-Ddu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ewF-KX-xwo">
+                                        <rect key="frame" x="0.0" y="16.666666666666622" width="213" height="107.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Användarnamn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87v-iY-2rf">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="065-tX-feC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lCN-HY-Eh3">
+                                                <rect key="frame" x="0.0" y="24" width="213" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="213" id="fO1-vp-ABf"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lösenord:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaP-s6-gPb">
+                                                <rect key="frame" x="0.0" y="54.000000000000007" width="75.333333333333329" height="23.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UrT-Ys-wAQ">
+                                                <rect key="frame" x="0.0" y="77.333333333333371" width="212" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="212" id="vT5-N6-UjD"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6de-Ci-btx" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="8" width="25" height="25"/>
+                                        <color key="backgroundColor" red="0.97456580400466919" green="0.68433874845504761" blue="0.71068662405014038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="4gt-82-DgY"/>
+                                            <constraint firstAttribute="height" constant="25" id="CSa-rd-7Eg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="CloseButton:" destination="DLz-zP-wNi" eventType="touchUpInside" id="jhl-KI-2Aq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43818074070000002" green="1" blue="0.47607670540000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ewF-KX-xwo" firstAttribute="leading" secondItem="IRU-0H-ed1" secondAttribute="leading" id="9vK-7W-mIO"/>
+                                    <constraint firstItem="MbL-sG-tKU" firstAttribute="centerY" secondItem="NwX-Zm-o1g" secondAttribute="centerY" id="BEs-e7-KKX"/>
+                                    <constraint firstItem="MbL-sG-tKU" firstAttribute="leading" secondItem="IRU-0H-ed1" secondAttribute="leadingMargin" id="CFA-zv-H4t"/>
+                                    <constraint firstItem="MbL-sG-tKU" firstAttribute="top" secondItem="ewF-KX-xwo" secondAttribute="bottom" constant="9" id="MPf-mC-AE2"/>
+                                    <constraint firstItem="6de-Ci-btx" firstAttribute="top" secondItem="IRU-0H-ed1" secondAttribute="topMargin" id="Qj4-Vg-oMw"/>
+                                    <constraint firstItem="6de-Ci-btx" firstAttribute="trailing" secondItem="NwX-Zm-o1g" secondAttribute="trailing" id="Se7-eA-Ip1"/>
+                                    <constraint firstItem="YKn-BE-SCe" firstAttribute="centerY" secondItem="IRU-0H-ed1" secondAttribute="centerY" constant="17" id="TPP-bM-Wn5"/>
+                                    <constraint firstItem="NwX-Zm-o1g" firstAttribute="leading" secondItem="MbL-sG-tKU" secondAttribute="trailing" constant="21" id="fqY-zt-zQj"/>
+                                    <constraint firstAttribute="width" constant="240" id="k0J-hW-Oyi"/>
+                                    <constraint firstItem="YKn-BE-SCe" firstAttribute="centerX" secondItem="IRU-0H-ed1" secondAttribute="centerX" id="mBP-Ku-PYF"/>
+                                    <constraint firstItem="6de-Ci-btx" firstAttribute="trailing" secondItem="IRU-0H-ed1" secondAttribute="trailingMargin" id="oco-ss-2jf"/>
+                                    <constraint firstAttribute="height" constant="173" id="pSz-GU-Rfn"/>
+                                    <constraint firstItem="YKn-BE-SCe" firstAttribute="centerY" secondItem="IRU-0H-ed1" secondAttribute="centerY" constant="17" id="rjh-j5-pdT"/>
+                                    <constraint firstItem="YKn-BE-SCe" firstAttribute="centerX" secondItem="IRU-0H-ed1" secondAttribute="centerX" id="saH-55-Be4"/>
+                                    <constraint firstAttribute="bottom" secondItem="MbL-sG-tKU" secondAttribute="bottom" constant="4" id="yuq-gk-RZw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IRU-0H-ed1" firstAttribute="centerX" secondItem="GSE-Qf-QCt" secondAttribute="centerX" id="UVu-lT-QEz"/>
+                            <constraint firstItem="IRU-0H-ed1" firstAttribute="centerY" secondItem="GSE-Qf-QCt" secondAttribute="centerY" constant="-23" id="akF-09-pAs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g81-Ma-WTB"/>
+                    </view>
+                    <connections>
+                        <outlet property="PasswordBox" destination="UrT-Ys-wAQ" id="z0M-KG-ACi"/>
+                        <outlet property="PopupBubbleBackround" destination="IRU-0H-ed1" id="shg-LL-Dcm"/>
+                        <outlet property="StatusLabel" destination="MbL-sG-tKU" id="F3C-Z3-iZ8"/>
+                        <outlet property="UsernameBox" destination="lCN-HY-Eh3" id="zIF-Aa-zeJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tVN-76-8Yq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493.60000000000002" y="-860.41979010494754"/>
+        </scene>
+        <!--Loadingscreen-->
+        <scene sceneID="w7S-dB-Rbb">
+            <objects>
+                <viewController id="T6o-vP-mjR" userLabel="Loadingscreen" customClass="LoadingScreen" customModule="PsykAkuten" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4mZ-Dh-jBD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbr-Eh-Eoy">
+                                <rect key="frame" x="110" y="303" width="154" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hPH-Tw-KeE" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6Ys-ir-vKM"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="hPH-Tw-KeE" id="FG8-RK-8RJ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="Loginscreen" id="xtk-l3-5lH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebh-sz-Din" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-474.39999999999998" y="-192.11822660098522"/>
+        </scene>
+        <!--Loginscreen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginID" id="BYZ-38-t0r" userLabel="Loginscreen" customClass="ViewController" customModule="PsykAkuten" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Användarnamn:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC0-NJ-H14">
+                                <rect key="frame" x="34" y="260.66666666666669" width="200" height="54"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nurse" translatesAutoresizingMaskIntoConstraints="NO" id="7uc-nn-0Ui">
+                                <rect key="frame" x="16" y="482" width="154" height="285"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lösenord:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="681-WD-0eH">
+                                <rect key="frame" x="34" y="344.66666666666669" width="136" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="tV2-Nl-IjJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-P4-V0w">
+                                <rect key="frame" x="34" y="306.66666666666669" width="307" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sNf-gr-5Ny"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jtk-kY-1Sg">
+                                <rect key="frame" x="34" y="391" width="307" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheRealSign" translatesAutoresizingMaskIntoConstraints="NO" id="gdV-Vn-B4j">
+                                <rect key="frame" x="34" y="73.999999999999986" width="307" height="170.66666666666663"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6D-un-PPx" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="190" y="633" width="115" height="69"/>
+                                <color key="backgroundColor" red="1" green="0.6989081152708263" blue="0.72685541584788527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="Kbl-3S-zEx"/>
+                                    <constraint firstAttribute="height" constant="69" id="VDh-1R-QH3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="LOGGA IN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYb-Lm-dix"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tw2-BA-s1H">
+                                <rect key="frame" x="34" y="429" width="307" height="21"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkF-np-llq">
+                                <rect key="frame" x="42" y="443.66666666666669" width="299" height="30"/>
+                                <state key="normal" title="Ny användare? Registrera dig här!">
+                                    <color key="titleColor" red="0.33097973679999998" green="0.31390841380000001" blue="0.34897182640000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="RegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="70k-V1-tXi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gC0-NJ-H14" firstAttribute="top" secondItem="gdV-Vn-B4j" secondAttribute="bottom" constant="16" id="0R4-DQ-7hY"/>
+                            <constraint firstItem="Tw2-BA-s1H" firstAttribute="top" secondItem="jtk-kY-1Sg" secondAttribute="bottom" constant="8" symbolic="YES" id="2dd-JQ-MaF"/>
+                            <constraint firstItem="HkF-np-llq" firstAttribute="top" secondItem="jtk-kY-1Sg" secondAttribute="bottom" constant="23" id="4iz-b8-YeC"/>
+                            <constraint firstItem="7uc-nn-0Ui" firstAttribute="top" secondItem="HkF-np-llq" secondAttribute="bottom" constant="8" symbolic="YES" id="6Ce-LK-HXD"/>
+                            <constraint firstItem="Tw2-BA-s1H" firstAttribute="trailing" secondItem="HkF-np-llq" secondAttribute="trailing" id="BaR-DK-iVY"/>
+                            <constraint firstItem="jtk-kY-1Sg" firstAttribute="trailing" secondItem="Tw2-BA-s1H" secondAttribute="trailing" id="H4f-k1-dZ4"/>
+                            <constraint firstItem="jtk-kY-1Sg" firstAttribute="top" secondItem="681-WD-0eH" secondAttribute="bottom" constant="6" id="HOj-Wm-nsv"/>
+                            <constraint firstItem="681-WD-0eH" firstAttribute="top" secondItem="gC0-NJ-H14" secondAttribute="bottom" constant="30" id="JFN-Ml-OAa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gC0-NJ-H14" secondAttribute="trailing" constant="141" id="LM0-AH-G1F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7uc-nn-0Ui" secondAttribute="bottom" constant="11" id="Lb8-OX-Nue"/>
+                            <constraint firstItem="jtk-kY-1Sg" firstAttribute="leading" secondItem="Tw2-BA-s1H" secondAttribute="leading" id="OGg-vt-3qA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="681-WD-0eH" secondAttribute="trailing" constant="205" id="P1Y-Rh-ckB"/>
+                            <constraint firstItem="v7c-P4-V0w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QKh-yd-vuN"/>
+                            <constraint firstItem="681-WD-0eH" firstAttribute="top" secondItem="v7c-P4-V0w" secondAttribute="bottom" constant="8" id="Vqo-5t-QgC"/>
+                            <constraint firstItem="gdV-Vn-B4j" firstAttribute="leading" secondItem="gC0-NJ-H14" secondAttribute="leading" id="XPK-Eo-y7c"/>
+                            <constraint firstItem="gdV-Vn-B4j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="aeX-m5-B2H"/>
+                            <constraint firstItem="7uc-nn-0Ui" firstAttribute="top" secondItem="Tw2-BA-s1H" secondAttribute="bottom" constant="32" id="cfT-wt-daI"/>
+                            <constraint firstItem="v7c-P4-V0w" firstAttribute="top" secondItem="gdV-Vn-B4j" secondAttribute="bottom" constant="62" id="dJk-QF-Jlv"/>
+                            <constraint firstItem="E6D-un-PPx" firstAttribute="leading" secondItem="7uc-nn-0Ui" secondAttribute="trailing" constant="20" id="l3S-xi-DxS"/>
+                            <constraint firstItem="681-WD-0eH" firstAttribute="leading" secondItem="jtk-kY-1Sg" secondAttribute="leading" id="lSE-8m-eON"/>
+                            <constraint firstItem="v7c-P4-V0w" firstAttribute="leading" secondItem="681-WD-0eH" secondAttribute="leading" id="lo4-9j-EX6"/>
+                            <constraint firstItem="7uc-nn-0Ui" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nKz-TV-g80"/>
+                            <constraint firstItem="gdV-Vn-B4j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="qMJ-e2-fRy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E6D-un-PPx" secondAttribute="trailing" constant="70" id="t4w-eW-u4m"/>
+                            <constraint firstItem="gC0-NJ-H14" firstAttribute="leading" secondItem="v7c-P4-V0w" secondAttribute="leading" id="th8-Vg-cL7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E6D-un-PPx" secondAttribute="bottom" constant="76" id="tq7-5R-9Jx"/>
+                            <constraint firstItem="gdV-Vn-B4j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vPb-Oh-RbA"/>
+                            <constraint firstItem="HkF-np-llq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="xge-wa-nGo"/>
+                            <constraint firstItem="jtk-kY-1Sg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xp2-lR-kSR"/>
+                            <constraint firstItem="v7c-P4-V0w" firstAttribute="trailing" secondItem="jtk-kY-1Sg" secondAttribute="trailing" id="zlB-85-LFt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="PasswordBox" destination="jtk-kY-1Sg" id="3zJ-oL-VBp"/>
+                        <outlet property="StatusLabel" destination="Tw2-BA-s1H" id="GIW-xe-gQk"/>
+                        <outlet property="UsernameBox" destination="v7c-P4-V0w" id="8Bw-kb-hDd"/>
+                        <segue destination="e50-Gy-ojR" kind="show" identifier="LoginToMap" id="hnI-NV-u1z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="493.60000000000002" y="-192.05397301349328"/>
+        </scene>
+        <!--TESTSIDAENDAST-->
+        <scene sceneID="Ugx-RJ-iKU">
+            <objects>
+                <viewController storyboardIdentifier="MapID" title="Test sida" id="e50-Gy-ojR" userLabel="TESTSIDAENDAST" customClass="MapViewController" customModule="PsykAkuten" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mJK-Nc-w1a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GameGround 3.0" highlightedImage="GameGround 3.0" translatesAutoresizingMaskIntoConstraints="NO" id="Wot-nZ-R3I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbn-w5-1Yz" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="167.66666666666666" y="354.66666666666669" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="5BV-Iz-GcI"/>
+                                    <constraint firstAttribute="height" constant="40" id="K5d-sU-1LO"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="42"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPopup:" destination="e50-Gy-ojR" eventType="touchUpInside" id="FIW-En-mjG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvI-wj-SMN" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="167.66666666666666" y="528" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="1qW-bA-TVg"/>
+                                    <constraint firstAttribute="height" constant="40" id="loU-Ie-JAx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="44"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPopup:" destination="e50-Gy-ojR" eventType="touchUpInside" id="Tig-Nh-gi8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IE5-u7-qvI" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="46.666666666666657" y="354" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0ru-ab-Ive"/>
+                                    <constraint firstAttribute="height" constant="40" id="vKL-uG-vFr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="43"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPopup:" destination="e50-Gy-ojR" eventType="touchUpInside" id="6sh-qi-FNz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fe-8A-TNB" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="46.666666666666657" y="219.66666666666666" width="40" height="39.999999999999972"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sTW-Lw-P1o"/>
+                                    <constraint firstAttribute="width" constant="40" id="xrl-BX-c5o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="41"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPopup:" destination="e50-Gy-ojR" eventType="touchUpInside" id="Ya6-qD-rpf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW7-eg-jyu" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="167.66666666666666" y="648" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Rnn-BB-lOr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="cu8-Yr-5dV"/>
+                                    <constraint firstAttribute="height" constant="40" id="szd-tx-DaE"/>
+                                    <constraint firstAttribute="width" constant="40" id="zxB-tX-Wqo"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="43"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.73497755009999999" blue="0.47963300939999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPopup:" destination="e50-Gy-ojR" eventType="touchUpInside" id="S4U-V1-AZT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2w-do-mcF">
+                                <rect key="frame" x="154" y="772" width="79" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Nurse" translatesAutoresizingMaskIntoConstraints="NO" id="81N-Da-FSP">
+                                <rect key="frame" x="289" y="727" width="53" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-N2-Swm">
+                                <rect key="frame" x="115" y="0.0" width="144" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40167372479347019" green="0.87020145939086291" blue="0.42596955813098536" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="26"/>
+                                <state key="normal" title="Next Level">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="bvI-wj-SMN" firstAttribute="top" secondItem="nbn-w5-1Yz" secondAttribute="bottom" multiplier="4:3" constant="2" id="BXR-ZX-Fy9"/>
+                            <constraint firstItem="kW7-eg-jyu" firstAttribute="top" secondItem="nbn-w5-1Yz" secondAttribute="bottom" multiplier="4:3" constant="122" id="CT7-ei-vQ8"/>
+                            <constraint firstItem="bvI-wj-SMN" firstAttribute="centerX" secondItem="2pF-XC-fh7" secondAttribute="centerX" id="Co5-3j-StB"/>
+                            <constraint firstItem="4Fe-8A-TNB" firstAttribute="centerX" secondItem="IE5-u7-qvI" secondAttribute="centerX" id="WGr-l0-IaO"/>
+                            <constraint firstItem="nbn-w5-1Yz" firstAttribute="centerX" secondItem="2pF-XC-fh7" secondAttribute="centerX" id="WhI-oc-AYm"/>
+                            <constraint firstItem="bvI-wj-SMN" firstAttribute="centerY" secondItem="2pF-XC-fh7" secondAttribute="centerY" multiplier="4:3" id="Whr-mX-NEM"/>
+                            <constraint firstItem="nbn-w5-1Yz" firstAttribute="leading" secondItem="IE5-u7-qvI" secondAttribute="trailing" multiplier="4:3" constant="52" id="X1l-3t-VZQ"/>
+                            <constraint firstItem="IE5-u7-qvI" firstAttribute="centerY" secondItem="nbn-w5-1Yz" secondAttribute="centerY" id="n3I-1U-Dtf"/>
+                            <constraint firstItem="kW7-eg-jyu" firstAttribute="centerX" secondItem="2pF-XC-fh7" secondAttribute="centerX" id="nOC-uW-Prk"/>
+                            <constraint firstItem="IE5-u7-qvI" firstAttribute="top" secondItem="4Fe-8A-TNB" secondAttribute="bottom" multiplier="4:3" constant="8" id="vxb-W6-YfR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2pF-XC-fh7"/>
+                    </view>
+                    <connections>
+                        <outlet property="Start" destination="o2w-do-mcF" id="NM9-N8-mdO"/>
+                        <outlet property="nurse" destination="81N-Da-FSP" id="o6M-IQ-iqO"/>
+                        <outletCollection property="levelButtons" destination="kW7-eg-jyu" collectionClass="NSMutableArray" id="G3c-OX-ggi"/>
+                        <outletCollection property="levelButtons" destination="bvI-wj-SMN" collectionClass="NSMutableArray" id="P97-f1-AY2"/>
+                        <outletCollection property="levelButtons" destination="nbn-w5-1Yz" collectionClass="NSMutableArray" id="bV7-j0-4ua"/>
+                        <outletCollection property="levelButtons" destination="IE5-u7-qvI" collectionClass="NSMutableArray" id="cg3-ji-JxA"/>
+                        <outletCollection property="levelButtons" destination="4Fe-8A-TNB" collectionClass="NSMutableArray" id="QcG-px-a88"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7f0-VJ-kOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="611.24437781109452"/>
+        </scene>
+        <!--Quizz View Controller-->
+        <scene sceneID="ZT5-aC-Nft">
+            <objects>
+                <viewController storyboardIdentifier="quizzID" id="0Js-Gp-R6X" customClass="QuizzViewController" customModule="PsykAkuten" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2MQ-TA-va9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAC-Rd-1hS" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="21" y="579" width="335" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="svar 3">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AnswerThreeButton:" destination="0Js-Gp-R6X" eventType="touchUpInside" id="5Up-y4-KAl"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pratbubbla" translatesAutoresizingMaskIntoConstraints="NO" id="7oS-eV-aZ3">
+                                <rect key="frame" x="20" y="20" width="340" height="294"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oIY-4Q-gD9">
+                                <rect key="frame" x="135" y="32" width="113" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="850-MP-Z51">
+                                <rect key="frame" x="374" y="100" width="40" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="En fråga här!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQW-7z-a0D">
+                                <rect key="frame" x="35" y="43" width="301" height="261"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64R-v9-QaE" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="21" y="497" width="335" height="61"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="svar 2">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AnswerTwoButton:" destination="0Js-Gp-R6X" eventType="touchUpInside" id="xll-di-wgc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3w-jA-jLf" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="24" y="407" width="330" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="svar 1">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AnswerOneButton:" destination="0Js-Gp-R6X" eventType="touchUpInside" id="dSy-Ei-Crb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttj-eE-0KV" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="21" y="667" width="335" height="59"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="svar 4">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AnswerFourButton:" destination="0Js-Gp-R6X" eventType="touchUpInside" id="w46-Dq-ziV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="center" lineBreakMode="middleTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kly-jd-Tu3">
+                                <rect key="frame" x="329" y="26" width="21" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86722064018249512" green="0.99861782789230347" blue="0.87463974952697754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2pF-XC-fh6"/>
+                    </view>
+                    <connections>
+                        <outlet property="AnswerFourButtonLabel" destination="Ttj-eE-0KV" id="BXV-F9-VDn"/>
+                        <outlet property="AnswerOneButtonLabel" destination="v3w-jA-jLf" id="IRP-D0-VEc"/>
+                        <outlet property="AnswerThreeButtonLabel" destination="HAC-Rd-1hS" id="MAB-M9-tZ7"/>
+                        <outlet property="AnswerTwoButtonLabel" destination="64R-v9-QaE" id="92g-sg-267"/>
+                        <outlet property="QuestionTextfield" destination="cQW-7z-a0D" id="aSV-dC-Wc9"/>
+                        <outlet property="TimerOnScreen" destination="kly-jd-Tu3" id="ZWe-bv-NHS"/>
+                        <segue destination="6qV-7H-aVq" kind="show" identifier="ResultSegue" animates="NO" id="TBn-M6-2Xj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7f0-VJ-kOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="-212.06896551724139"/>
+        </scene>
+        <!--ResultScreen-->
+        <scene sceneID="Spe-h6-NGc">
+            <objects>
+                <viewController storyboardIdentifier="ResultID" id="6qV-7H-aVq" userLabel="ResultScreen" customClass="ResultViewController" customModule="PsykAkuten" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aDq-TO-44B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llG-SL-ZYg">
+                                <rect key="frame" x="16" y="355.66666666666669" width="343" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="BEz-Tx-G9L"/>
+                                    <constraint firstAttribute="height" constant="67" id="fHF-IL-v5F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QuizWin" translatesAutoresizingMaskIntoConstraints="NO" id="xx4-5a-Er1">
+                                <rect key="frame" x="178" y="191.66666666666666" width="19" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="470-hA-PMX"/>
+                                    <constraint firstAttribute="height" constant="18" id="5Xv-uB-r55"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aY-We-B0e">
+                                <rect key="frame" x="31" y="490" width="312" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9C-rw-LnB" userLabel="Retry" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="77" y="742" width="221" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.79254719081788161" green="0.90587671942852832" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Försök igen">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tryAgain:" destination="6qV-7H-aVq" eventType="touchUpInside" id="kVC-6p-ln1"/>
+                                    <segue destination="0Js-Gp-R6X" kind="show" identifier="TryAgainSegue" id="f8p-d0-6qK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7T-zJ-kSV" userLabel="Return" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                <rect key="frame" x="16" y="44" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86722064018249512" green="0.99861782789230347" blue="0.87463974952697754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Tillbaka till kartan">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToMap:" destination="6qV-7H-aVq" eventType="touchUpInside" id="YbK-gx-58b"/>
+                                    <segue destination="e50-Gy-ojR" kind="show" identifier="BackToMapSegue" id="eDP-3t-fj1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xx4-5a-Er1" firstAttribute="top" secondItem="3b5-Mq-LXg" secondAttribute="top" multiplier="4:3" constant="133" id="H1Y-BK-pO1"/>
+                            <constraint firstItem="xx4-5a-Er1" firstAttribute="centerX" secondItem="3b5-Mq-LXg" secondAttribute="centerX" id="UcF-dY-CDc"/>
+                            <constraint firstItem="llG-SL-ZYg" firstAttribute="top" secondItem="3b5-Mq-LXg" secondAttribute="top" multiplier="4:3" constant="297" id="ZDr-mo-e5a"/>
+                            <constraint firstItem="llG-SL-ZYg" firstAttribute="centerX" secondItem="3b5-Mq-LXg" secondAttribute="centerX" id="mbO-8I-vpI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3b5-Mq-LXg"/>
+                    </view>
+                    <connections>
+                        <outlet property="LargeText" destination="llG-SL-ZYg" id="LJ4-hd-o3B"/>
+                        <outlet property="ResultImage" destination="xx4-5a-Er1" id="hAS-rk-Int"/>
+                        <outlet property="SmallerText" destination="9aY-We-B0e" id="ati-9C-H6o"/>
+                        <outlet property="tryagain" destination="e9C-rw-LnB" id="XK8-YW-gVv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AgU-vw-EDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032.5" y="-192.5"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="nt1-GO-UdF">
+            <objects>
+                <viewController storyboardIdentifier="PopUpID" id="cqc-cW-hzh" customClass="PopUpViewController" customModule="PsykAkuten" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jdr-ow-3cM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cut-lP-Xa9">
+                                <rect key="frame" x="56" y="333" width="263" height="146"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popuppbubbla" translatesAutoresizingMaskIntoConstraints="NO" id="ydv-aW-fVR">
+                                        <rect key="frame" x="-10" y="4" width="282" height="138"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="282" id="E4n-id-PXh"/>
+                                            <constraint firstAttribute="height" constant="138" id="zH2-YJ-NxD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9K-Qf-PP7" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="52" width="60" height="30"/>
+                                        <color key="backgroundColor" red="0.86722064018249512" green="0.99861782789230347" blue="0.87463974952697754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="XOm-h8-7RI"/>
+                                            <constraint firstAttribute="width" constant="60" id="qyd-X9-0JO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Starta">
+                                            <color key="titleColor" red="0.42691628023125011" green="0.49260390228426398" blue="0.43351501064613479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="StartButton:" destination="cqc-cW-hzh" eventType="touchUpInside" id="vee-3x-sJ9"/>
+                                            <segue destination="0Js-Gp-R6X" kind="popoverPresentation" identifier="QuizzViewController" popoverAnchorView="V9K-Qf-PP7" id="k0e-aA-F8U">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nivå" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WF-eK-U7g">
+                                        <rect key="frame" x="106" y="20" width="51" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="3So-69-bEY"/>
+                                            <constraint firstAttribute="width" constant="51" id="Xg2-Jh-fLP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jle-Iv-EGt" customClass="Roundbutton" customModule="PsykAkuten" customModuleProvider="target">
+                                        <rect key="frame" x="155" y="52" width="60" height="30"/>
+                                        <color key="backgroundColor" red="0.99825590848922729" green="0.69998365640640259" blue="0.72624832391738892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="ObG-zA-y61"/>
+                                            <constraint firstAttribute="height" constant="30" id="vJ7-yh-FVF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <state key="normal" title="Avbryt">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="closePopup:" destination="cqc-cW-hzh" eventType="touchUpInside" id="gc3-eo-gl6"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emJ-h8-c7y">
+                                        <rect key="frame" x="148" y="20" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dd9-6s-B4w">
+                                        <rect key="frame" x="177" y="90" width="33" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Case: Diabetiker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yv-jd-lit">
+                                        <rect key="frame" x="68" y="90" width="126" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" label="popUpViewBackground">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="Jle-Iv-EGt" firstAttribute="centerY" secondItem="cut-lP-Xa9" secondAttribute="centerY" constant="-6" id="8MS-TQ-S9p"/>
+                                    <constraint firstItem="ydv-aW-fVR" firstAttribute="centerX" secondItem="cut-lP-Xa9" secondAttribute="centerX" constant="-0.5" id="8qu-7Y-UgS"/>
+                                    <constraint firstItem="V9K-Qf-PP7" firstAttribute="centerX" secondItem="cut-lP-Xa9" secondAttribute="centerX" constant="-53.5" id="IjL-W2-phO"/>
+                                    <constraint firstItem="Jle-Iv-EGt" firstAttribute="centerX" secondItem="cut-lP-Xa9" secondAttribute="centerX" constant="53.5" id="JG7-zM-PO1"/>
+                                    <constraint firstItem="ydv-aW-fVR" firstAttribute="centerY" secondItem="cut-lP-Xa9" secondAttribute="centerY" id="Lwj-MF-IaZ"/>
+                                    <constraint firstAttribute="height" constant="146" id="XUq-9f-d7H"/>
+                                    <constraint firstItem="4WF-eK-U7g" firstAttribute="centerY" secondItem="cut-lP-Xa9" secondAttribute="centerY" constant="-42.5" id="afZ-dy-IJL"/>
+                                    <constraint firstAttribute="width" constant="263" id="bQ1-rA-Tj9"/>
+                                    <constraint firstItem="4WF-eK-U7g" firstAttribute="centerX" secondItem="cut-lP-Xa9" secondAttribute="centerX" id="oUK-Pk-VSj"/>
+                                    <constraint firstItem="V9K-Qf-PP7" firstAttribute="centerY" secondItem="cut-lP-Xa9" secondAttribute="centerY" constant="-6" id="vOE-uV-Auj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cut-lP-Xa9" firstAttribute="centerY" secondItem="jdr-ow-3cM" secondAttribute="centerY" id="JCb-Ea-GfK"/>
+                            <constraint firstItem="cut-lP-Xa9" firstAttribute="centerX" secondItem="jdr-ow-3cM" secondAttribute="centerX" id="SeU-7Y-6rP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zGK-jF-MVa"/>
+                    </view>
+                    <connections>
+                        <outlet property="CIDLabel" destination="dd9-6s-B4w" id="Fir-pL-QIV"/>
+                        <outlet property="CStringLabel" destination="4yv-jd-lit" id="Gxb-d0-eat"/>
+                        <outlet property="ChatBubbleBackground" destination="cut-lP-Xa9" id="tGT-u7-Wfc"/>
+                        <outlet property="LevelLabel" destination="emJ-h8-c7y" id="1y6-JV-6kO"/>
+                        <outlet property="StartButton" destination="V9K-Qf-PP7" id="YMd-VV-VK8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ol1-MX-jrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517.5999999999999" y="617.54122938530736"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GameGround 3.0" width="540" height="960"/>
+        <image name="Nurse" width="100" height="149"/>
+        <image name="Pratbubbla" width="1071" height="859"/>
+        <image name="QuizWin" width="520" height="547"/>
+        <image name="TheRealSign" width="1734" height="682"/>
+        <image name="popuppbubbla" width="777" height="373"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="f8p-d0-6qK"/>
+        <segue reference="eDP-3t-fj1"/>
+    </inferredMetricsTieBreakers>
+</document>

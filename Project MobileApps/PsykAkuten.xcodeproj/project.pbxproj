@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B0414AE1FEA948800261F25 /* RegisterPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0414AD1FEA948800261F25 /* RegisterPopupViewController.swift */; };
+		8B1D75021FE8102C007470C7 /* CloseSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D75011FE8102C007470C7 /* CloseSound.m4a */; };
+		8B1D75041FE8103A007470C7 /* OpenSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8B1D75031FE8103A007470C7 /* OpenSound.m4a */; };
+		8B4031981FE0004B005CDA52 /* Roundbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4031971FE0004B005CDA52 /* Roundbutton.swift */; };
+		8B40319A1FE00490005CDA52 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4031991FE00490005CDA52 /* PopUpViewController.swift */; };
+		AE1BAB071FDF2C3F000E9BAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1BAB061FDF2C3F000E9BAD /* AppDelegate.swift */; };
+		AE1BAB091FDF2C3F000E9BAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1BAB081FDF2C3F000E9BAD /* ViewController.swift */; };
+		AE1BAB0C1FDF2C40000E9BAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1BAB0A1FDF2C40000E9BAD /* Main.storyboard */; };
+		AE1BAB0E1FDF2C40000E9BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1BAB0D1FDF2C40000E9BAD /* Assets.xcassets */; };
+		AE1BAB111FDF2C40000E9BAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1BAB0F1FDF2C40000E9BAD /* LaunchScreen.storyboard */; };
+		AE1BAB1C1FDF2C40000E9BAD /* PsykAkutenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1BAB1B1FDF2C40000E9BAD /* PsykAkutenTests.swift */; };
+		AE1BAB271FDF2C40000E9BAD /* PsykAkutenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1BAB261FDF2C40000E9BAD /* PsykAkutenUITests.swift */; };
+		AE1BAB371FE1287B000E9BAD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1BAB361FE1287B000E9BAD /* ResultViewController.swift */; };
+		AE1BAB391FE12956000E9BAD /* QuizzViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1BAB381FE12956000E9BAD /* QuizzViewController.swift */; };
+		AE1BAB3B1FE12AFF000E9BAD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1BAB3A1FE12AFF000E9BAD /* MapViewController.swift */; };
+		F4019F631FF437B700369B91 /* LoadingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4019F621FF437B700369B91 /* LoadingAnimation.swift */; };
+		F4019F6C1FF51BCB00369B91 /* Loading.atlas in Resources */ = {isa = PBXBuildFile; fileRef = F4019F651FF51BCB00369B91 /* Loading.atlas */; };
+		F411585A1FF67EA0005B2CB8 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41158591FF67EA0005B2CB8 /* LoadingScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE1578BB1FE8090000755B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		AE1578BD1FE8090000755B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		AE1578BF1FE8090000755B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		AE1578C11FE8090000755B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		AE1578C31FE8090000755B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		AE1578C51FE8090000755B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		AE1578C71FE8090000755B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		AE1BAB181FDF2C40000E9BAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE1BAAFB1FDF2C3F000E9BAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1BAB021FDF2C3F000E9BAD;
+			remoteInfo = PsykAkuten;
+		};
+		AE1BAB231FDF2C40000E9BAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE1BAAFB1FDF2C3F000E9BAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1BAB021FDF2C3F000E9BAD;
+			remoteInfo = PsykAkuten;
+		};
+		BA94FDD32004A86600BD3EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		BA94FDD52004A86600BD3EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		BA94FDD72004A86600BD3EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		BA94FDD92004A86600BD3EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		BA94FDDB2004A86600BD3EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		BA94FDDD2004A86600BD3EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		BA94FDDF2004A86600BD3EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		BA95FE1E20067132009C83D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		BA95FE2020067132009C83D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		BA95FE2220067132009C83D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		BA95FE2420067132009C83D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		BA95FE2620067132009C83D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		BA95FE2820067132009C83D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		BA95FE2A20067132009C83D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8BD4E3651FE66D32002A5A7B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8B0414AD1FEA948800261F25 /* RegisterPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPopupViewController.swift; sourceTree = "<group>"; };
+		8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../SQLite.master/SQLite.xcodeproj; sourceTree = "<group>"; };
+		8B1D75011FE8102C007470C7 /* CloseSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = CloseSound.m4a; sourceTree = "<group>"; };
+		8B1D75031FE8103A007470C7 /* OpenSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenSound.m4a; sourceTree = "<group>"; };
+		8B4031971FE0004B005CDA52 /* Roundbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roundbutton.swift; sourceTree = "<group>"; };
+		8B4031991FE00490005CDA52 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = ../SQLite.master/SQLite.xcodeproj; sourceTree = "<group>"; };
+		AE1BAB031FDF2C3F000E9BAD /* PsykAkuten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PsykAkuten.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1BAB061FDF2C3F000E9BAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE1BAB081FDF2C3F000E9BAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE1BAB0B1FDF2C40000E9BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE1BAB0D1FDF2C40000E9BAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE1BAB101FDF2C40000E9BAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE1BAB121FDF2C40000E9BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1BAB171FDF2C40000E9BAD /* PsykAkutenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PsykAkutenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1BAB1B1FDF2C40000E9BAD /* PsykAkutenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsykAkutenTests.swift; sourceTree = "<group>"; };
+		AE1BAB1D1FDF2C40000E9BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1BAB221FDF2C40000E9BAD /* PsykAkutenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PsykAkutenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1BAB261FDF2C40000E9BAD /* PsykAkutenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsykAkutenUITests.swift; sourceTree = "<group>"; };
+		AE1BAB281FDF2C40000E9BAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1BAB361FE1287B000E9BAD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		AE1BAB381FE12956000E9BAD /* QuizzViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzViewController.swift; sourceTree = "<group>"; };
+		AE1BAB3A1FE12AFF000E9BAD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F4019F621FF437B700369B91 /* LoadingAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingAnimation.swift; sourceTree = "<group>"; };
+		F4019F651FF51BCB00369B91 /* Loading.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Loading.atlas; sourceTree = "<group>"; };
+		F41158591FF67EA0005B2CB8 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE1BAB001FDF2C3F000E9BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1BAB141FDF2C40000E9BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1BAB1F1FDF2C40000E9BAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B1D75001FE80FD6007470C7 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D75031FE8103A007470C7 /* OpenSound.m4a */,
+				8B1D75011FE8102C007470C7 /* CloseSound.m4a */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		8BD4E35F1FE66CFC002A5A7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE1578BC1FE8090000755B11 /* SQLite.framework */,
+				AE1578BE1FE8090000755B11 /* SQLiteTests iOS.xctest */,
+				AE1578C01FE8090000755B11 /* SQLite.framework */,
+				AE1578C21FE8090000755B11 /* SQLiteTests Mac.xctest */,
+				AE1578C41FE8090000755B11 /* SQLite.framework */,
+				AE1578C61FE8090000755B11 /* SQLiteTests tvOS.xctest */,
+				AE1578C81FE8090000755B11 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE1BAAFA1FDF2C3F000E9BAD = {
+			isa = PBXGroup;
+			children = (
+				AE1BAB051FDF2C3F000E9BAD /* PsykAkuten */,
+				8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */,
+				AE1BAB1A1FDF2C40000E9BAD /* PsykAkutenTests */,
+				AE1BAB251FDF2C40000E9BAD /* PsykAkutenUITests */,
+				AE1BAB041FDF2C3F000E9BAD /* Products */,
+				8B1D75001FE80FD6007470C7 /* Music */,
+				8BD4E35F1FE66CFC002A5A7B /* Products */,
+				8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */,
+				BAC08E5A1FF17774003667C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE1BAB041FDF2C3F000E9BAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE1BAB031FDF2C3F000E9BAD /* PsykAkuten.app */,
+				AE1BAB171FDF2C40000E9BAD /* PsykAkutenTests.xctest */,
+				AE1BAB221FDF2C40000E9BAD /* PsykAkutenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE1BAB051FDF2C3F000E9BAD /* PsykAkuten */ = {
+			isa = PBXGroup;
+			children = (
+				F41158591FF67EA0005B2CB8 /* LoadingScreen.swift */,
+				F4019F621FF437B700369B91 /* LoadingAnimation.swift */,
+				8B0414AD1FEA948800261F25 /* RegisterPopupViewController.swift */,
+				AE1BAB061FDF2C3F000E9BAD /* AppDelegate.swift */,
+				AE1BAB081FDF2C3F000E9BAD /* ViewController.swift */,
+				AE1BAB0A1FDF2C40000E9BAD /* Main.storyboard */,
+				AE1BAB3A1FE12AFF000E9BAD /* MapViewController.swift */,
+				8B4031991FE00490005CDA52 /* PopUpViewController.swift */,
+				AE1BAB0D1FDF2C40000E9BAD /* Assets.xcassets */,
+				F4019F651FF51BCB00369B91 /* Loading.atlas */,
+				AE1BAB0F1FDF2C40000E9BAD /* LaunchScreen.storyboard */,
+				AE1BAB121FDF2C40000E9BAD /* Info.plist */,
+				8B4031971FE0004B005CDA52 /* Roundbutton.swift */,
+				AE1BAB361FE1287B000E9BAD /* ResultViewController.swift */,
+				AE1BAB381FE12956000E9BAD /* QuizzViewController.swift */,
+			);
+			path = PsykAkuten;
+			sourceTree = "<group>";
+		};
+		AE1BAB1A1FDF2C40000E9BAD /* PsykAkutenTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE1BAB1B1FDF2C40000E9BAD /* PsykAkutenTests.swift */,
+				AE1BAB1D1FDF2C40000E9BAD /* Info.plist */,
+			);
+			path = PsykAkutenTests;
+			sourceTree = "<group>";
+		};
+		AE1BAB251FDF2C40000E9BAD /* PsykAkutenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE1BAB261FDF2C40000E9BAD /* PsykAkutenUITests.swift */,
+				AE1BAB281FDF2C40000E9BAD /* Info.plist */,
+			);
+			path = PsykAkutenUITests;
+			sourceTree = "<group>";
+		};
+		BA94FDCA2004A86600BD3EAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA94FDD42004A86600BD3EAD /* SQLite.framework */,
+				BA94FDD62004A86600BD3EAD /* SQLiteTests iOS.xctest */,
+				BA94FDD82004A86600BD3EAD /* SQLite.framework */,
+				BA94FDDA2004A86600BD3EAD /* SQLiteTests Mac.xctest */,
+				BA94FDDC2004A86600BD3EAD /* SQLite.framework */,
+				BA94FDDE2004A86600BD3EAD /* SQLiteTests tvOS.xctest */,
+				BA94FDE02004A86600BD3EAD /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA95FE0E20067132009C83D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA95FE1F20067132009C83D0 /* SQLite.framework */,
+				BA95FE2120067132009C83D0 /* SQLiteTests iOS.xctest */,
+				BA95FE2320067132009C83D0 /* SQLite.framework */,
+				BA95FE2520067132009C83D0 /* SQLiteTests Mac.xctest */,
+				BA95FE2720067132009C83D0 /* SQLite.framework */,
+				BA95FE2920067132009C83D0 /* SQLiteTests tvOS.xctest */,
+				BA95FE2B20067132009C83D0 /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAC08E5A1FF17774003667C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE1BAB021FDF2C3F000E9BAD /* PsykAkuten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1BAB2B1FDF2C40000E9BAD /* Build configuration list for PBXNativeTarget "PsykAkuten" */;
+			buildPhases = (
+				AE1BAAFF1FDF2C3F000E9BAD /* Sources */,
+				AE1BAB001FDF2C3F000E9BAD /* Frameworks */,
+				AE1BAB011FDF2C3F000E9BAD /* Resources */,
+				8BD4E3651FE66D32002A5A7B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PsykAkuten;
+			productName = PsykAkuten;
+			productReference = AE1BAB031FDF2C3F000E9BAD /* PsykAkuten.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE1BAB161FDF2C40000E9BAD /* PsykAkutenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1BAB2E1FDF2C40000E9BAD /* Build configuration list for PBXNativeTarget "PsykAkutenTests" */;
+			buildPhases = (
+				AE1BAB131FDF2C40000E9BAD /* Sources */,
+				AE1BAB141FDF2C40000E9BAD /* Frameworks */,
+				AE1BAB151FDF2C40000E9BAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE1BAB191FDF2C40000E9BAD /* PBXTargetDependency */,
+			);
+			name = PsykAkutenTests;
+			productName = PsykAkutenTests;
+			productReference = AE1BAB171FDF2C40000E9BAD /* PsykAkutenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE1BAB211FDF2C40000E9BAD /* PsykAkutenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1BAB311FDF2C40000E9BAD /* Build configuration list for PBXNativeTarget "PsykAkutenUITests" */;
+			buildPhases = (
+				AE1BAB1E1FDF2C40000E9BAD /* Sources */,
+				AE1BAB1F1FDF2C40000E9BAD /* Frameworks */,
+				AE1BAB201FDF2C40000E9BAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE1BAB241FDF2C40000E9BAD /* PBXTargetDependency */,
+			);
+			name = PsykAkutenUITests;
+			productName = PsykAkutenUITests;
+			productReference = AE1BAB221FDF2C40000E9BAD /* PsykAkutenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE1BAAFB1FDF2C3F000E9BAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Linus Sens Ingels";
+				TargetAttributes = {
+					AE1BAB021FDF2C3F000E9BAD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AE1BAB161FDF2C40000E9BAD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE1BAB021FDF2C3F000E9BAD;
+					};
+					AE1BAB211FDF2C40000E9BAD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE1BAB021FDF2C3F000E9BAD;
+					};
+				};
+			};
+			buildConfigurationList = AE1BAAFE1FDF2C3F000E9BAD /* Build configuration list for PBXProject "PsykAkuten" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE1BAAFA1FDF2C3F000E9BAD;
+			productRefGroup = AE1BAB041FDF2C3F000E9BAD /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BA94FDCA2004A86600BD3EAD /* Products */;
+					ProjectRef = 8B49B8041FF5433200C44A02 /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = BA95FE0E20067132009C83D0 /* Products */;
+					ProjectRef = 8B1036AE1FE7BE1A00947E01 /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				AE1BAB021FDF2C3F000E9BAD /* PsykAkuten */,
+				AE1BAB161FDF2C40000E9BAD /* PsykAkutenTests */,
+				AE1BAB211FDF2C40000E9BAD /* PsykAkutenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AE1578BC1FE8090000755B11 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AE1578BB1FE8090000755B11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE1578BE1FE8090000755B11 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = AE1578BD1FE8090000755B11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE1578C01FE8090000755B11 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AE1578BF1FE8090000755B11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE1578C21FE8090000755B11 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = AE1578C11FE8090000755B11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE1578C41FE8090000755B11 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AE1578C31FE8090000755B11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE1578C61FE8090000755B11 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = AE1578C51FE8090000755B11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE1578C81FE8090000755B11 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AE1578C71FE8090000755B11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA94FDD42004A86600BD3EAD /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BA94FDD32004A86600BD3EAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA94FDD62004A86600BD3EAD /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = BA94FDD52004A86600BD3EAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA94FDD82004A86600BD3EAD /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BA94FDD72004A86600BD3EAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA94FDDA2004A86600BD3EAD /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = BA94FDD92004A86600BD3EAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA94FDDC2004A86600BD3EAD /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BA94FDDB2004A86600BD3EAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA94FDDE2004A86600BD3EAD /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = BA94FDDD2004A86600BD3EAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA94FDE02004A86600BD3EAD /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BA94FDDF2004A86600BD3EAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA95FE1F20067132009C83D0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BA95FE1E20067132009C83D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA95FE2120067132009C83D0 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = BA95FE2020067132009C83D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA95FE2320067132009C83D0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BA95FE2220067132009C83D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA95FE2520067132009C83D0 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = BA95FE2420067132009C83D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA95FE2720067132009C83D0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BA95FE2620067132009C83D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA95FE2920067132009C83D0 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = BA95FE2820067132009C83D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BA95FE2B20067132009C83D0 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = BA95FE2A20067132009C83D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE1BAB011FDF2C3F000E9BAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1BAB111FDF2C40000E9BAD /* LaunchScreen.storyboard in Resources */,
+				8B1D75021FE8102C007470C7 /* CloseSound.m4a in Resources */,
+				AE1BAB0E1FDF2C40000E9BAD /* Assets.xcassets in Resources */,
+				8B1D75041FE8103A007470C7 /* OpenSound.m4a in Resources */,
+				F4019F6C1FF51BCB00369B91 /* Loading.atlas in Resources */,
+				AE1BAB0C1FDF2C40000E9BAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1BAB151FDF2C40000E9BAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1BAB201FDF2C40000E9BAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE1BAAFF1FDF2C3F000E9BAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F411585A1FF67EA0005B2CB8 /* LoadingScreen.swift in Sources */,
+				AE1BAB391FE12956000E9BAD /* QuizzViewController.swift in Sources */,
+				AE1BAB371FE1287B000E9BAD /* ResultViewController.swift in Sources */,
+				8B4031981FE0004B005CDA52 /* Roundbutton.swift in Sources */,
+				F4019F631FF437B700369B91 /* LoadingAnimation.swift in Sources */,
+				AE1BAB091FDF2C3F000E9BAD /* ViewController.swift in Sources */,
+				8B0414AE1FEA948800261F25 /* RegisterPopupViewController.swift in Sources */,
+				AE1BAB071FDF2C3F000E9BAD /* AppDelegate.swift in Sources */,
+				8B40319A1FE00490005CDA52 /* PopUpViewController.swift in Sources */,
+				AE1BAB3B1FE12AFF000E9BAD /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1BAB131FDF2C40000E9BAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1BAB1C1FDF2C40000E9BAD /* PsykAkutenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1BAB1E1FDF2C40000E9BAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1BAB271FDF2C40000E9BAD /* PsykAkutenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE1BAB191FDF2C40000E9BAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE1BAB021FDF2C3F000E9BAD /* PsykAkuten */;
+			targetProxy = AE1BAB181FDF2C40000E9BAD /* PBXContainerItemProxy */;
+		};
+		AE1BAB241FDF2C40000E9BAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE1BAB021FDF2C3F000E9BAD /* PsykAkuten */;
+			targetProxy = AE1BAB231FDF2C40000E9BAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE1BAB0A1FDF2C40000E9BAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE1BAB0B1FDF2C40000E9BAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE1BAB0F1FDF2C40000E9BAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE1BAB101FDF2C40000E9BAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE1BAB291FDF2C40000E9BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE1BAB2A1FDF2C40000E9BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE1BAB2C1FDF2C40000E9BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 656BR4VZG7;
+				INFOPLIST_FILE = PsykAkuten/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PsykApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE1BAB2D1FDF2C40000E9BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 656BR4VZG7;
+				INFOPLIST_FILE = PsykAkuten/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PsykApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE1BAB2F1FDF2C40000E9BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PsykAkutenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Linus.PsykAkutenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PsykAkuten.app/PsykAkuten";
+			};
+			name = Debug;
+		};
+		AE1BAB301FDF2C40000E9BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PsykAkutenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Linus.PsykAkutenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PsykAkuten.app/PsykAkuten";
+			};
+			name = Release;
+		};
+		AE1BAB321FDF2C40000E9BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PsykAkutenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Linus.PsykAkutenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PsykAkuten;
+			};
+			name = Debug;
+		};
+		AE1BAB331FDF2C40000E9BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PsykAkutenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Linus.PsykAkutenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PsykAkuten;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE1BAAFE1FDF2C3F000E9BAD /* Build configuration list for PBXProject "PsykAkuten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1BAB291FDF2C40000E9BAD /* Debug */,
+				AE1BAB2A1FDF2C40000E9BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE1BAB2B1FDF2C40000E9BAD /* Build configuration list for PBXNativeTarget "PsykAkuten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1BAB2C1FDF2C40000E9BAD /* Debug */,
+				AE1BAB2D1FDF2C40000E9BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE1BAB2E1FDF2C40000E9BAD /* Build configuration list for PBXNativeTarget "PsykAkutenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1BAB2F1FDF2C40000E9BAD /* Debug */,
+				AE1BAB301FDF2C40000E9BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE1BAB311FDF2C40000E9BAD /* Build configuration list for PBXNativeTarget "PsykAkutenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1BAB321FDF2C40000E9BAD /* Debug */,
+				AE1BAB331FDF2C40000E9BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE1BAAFB1FDF2C3F000E9BAD /* Project object */;
+}
